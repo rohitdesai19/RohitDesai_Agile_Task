@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> welcome to Sales</title>
+    <style>
+        .nav ul{
+            
+            
+            padding : 0;
+            margin :0;
+            text-align: center;
+
+        }
+        .nav li{
+            display:inline-block;
+        
+            width:250px;
+            padding: 14px 100px;
+            text-align: center;
+        }
+        .nav select{
+            padding-left: 10;
+            display:inline-block;
+            font-size: 17px;
+            font-family : Helvetica;
+            text-align: center;
+
+        }
+        .nav label{
+            padding-left: 10;
+            display:block;
+            font-size: 17px;
+            font-family : Helvetica;
+            text-align: left;
+        }
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="topnav">
+      <a >Home</a>
+      <a style="padding: 14px 500px;align-items: right;">Sales Report</a>
+      <a style="text-align:right">UserName: Rohit Desai</a>
+    </div>
+    <br>
+    <div class="container mt-5">
+        <div class="nav" style="text-align:center">
+             <ul style="text-align:center">  
+                 <li style="text-align:center">
+                      <label for="main_menu">Category:
+                        <select name="category" id="main_menu" >
+                         <option>Select category</option><br>
+                         <option value ="cars"> cars</option>
+                         <option value ="clothing"> clothing</option>
+                         <option value ="food"> food</option>
+                     </select>
+                    </label>
+                 </li> 
+                 <li style="text-align:center">
+                     <label for="sub _menu">Items:
+                     <select name="category" id="sub _menu" >
+                          <option>Select items</option><br>
+                          
+                    </select>
+                  </label>
+                </li>
+                <li style="text-align:center">
+                    <label for="sub _menu1">Brand:
+                    <select name="brand" id="sub _menu1" >
+                         <option>Select brand</option><br>
+                   </select>
+                  </label>
+               </li>
+             </ul>
+           
+            </div>
+            <br>
+    <div >
+        <h2 style="text-align:center">Sales Per Month</h2>
+    </div>
+    
+    </div>
+    <div id="barchart_values" style="width: 1000px; height: 400px; padding:100px; align-items: center;"></div>
+   
+</body>
+<script src="s1.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</html>
